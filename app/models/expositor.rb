@@ -1,0 +1,2 @@
+class Expositor < ApplicationRecord
+end
