@@ -1,0 +1,2 @@
+class ActivdadExpositor < ApplicationRecord
+end
