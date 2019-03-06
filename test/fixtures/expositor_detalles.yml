@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  expositor_id: 1
+  aceptados: 1
+  rechazados: 1
+  fallos: 1
+
+two:
+  expositor_id: 1
+  aceptados: 1
+  rechazados: 1
+  fallos: 1

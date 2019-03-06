@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  fallo_expositor_id: 1
+  expositor_id: 1
+  actividad_id: 1
+
+two:
+  fallo_expositor_id: 1
+  expositor_id: 1
+  actividad_id: 1
