@@ -1,4 +1,5 @@
 ActiveAdmin.register Horario do
+  menu priority: 5
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
 #
@@ -9,8 +10,7 @@ ActiveAdmin.register Horario do
 # permit_params do
 #   permitted = [:permitted, :attributes]
 #   permitted << :other if params[:action] == 'create' && current_user.admin?
-#   permitted
-# end
+
   config.batch_actions = false # desabilita el boton batch
   permit_params :dia, :horario
 

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_03_06_212707) do
+ActiveRecord::Schema.define(version: 2019_03_11_175405) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -55,9 +55,10 @@ ActiveRecord::Schema.define(version: 2019_03_06_212707) do
     t.time "hora_termino"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.date "fecha"
+    t.datetime "fecha"
     t.string "transporte"
     t.string "jornada"
+    t.boolean "cancelar", default: false
   end
 
   create_table "admin_users", force: :cascade do |t|
@@ -68,6 +69,7 @@ ActiveRecord::Schema.define(version: 2019_03_06_212707) do
     t.datetime "remember_created_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "rol_id"
     t.index ["email"], name: "index_admin_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true
   end
@@ -81,6 +83,23 @@ ActiveRecord::Schema.define(version: 2019_03_06_212707) do
     t.datetime "updated_at", null: false
     t.boolean "justifica", default: false
     t.text "comentario"
+  end
+
+  create_table "comentarios", force: :cascade do |t|
+    t.integer "expositor_id"
+    t.integer "actividad_id"
+    t.time "fecha"
+    t.text "comentario"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "devolver_materials", force: :cascade do |t|
+    t.integer "material_id"
+    t.integer "actividad_id"
+    t.integer "cantidad"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "expositor_detalles", force: :cascade do |t|
@@ -163,6 +182,14 @@ ActiveRecord::Schema.define(version: 2019_03_06_212707) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "rols", force: :cascade do |t|
+    t.string "nombre"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_foreign_key "asistencias", "actividads"
+  add_foreign_key "asistencias", "expositors"
   add_foreign_key "expositor_detalles", "expositors"
   add_foreign_key "fallo_expositor_actividads", "actividads"
   add_foreign_key "fallo_expositor_actividads", "expositors"

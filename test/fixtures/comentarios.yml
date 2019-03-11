@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  expositor_id: 1
+  actividad_id: 1
+  fecha: 2019-03-08 11:01:44
+  comentario: MyText
+
+two:
+  expositor_id: 1
+  actividad_id: 1
+  fecha: 2019-03-08 11:01:44
+  comentario: MyText

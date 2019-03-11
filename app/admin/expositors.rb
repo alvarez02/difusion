@@ -1,5 +1,5 @@
 ActiveAdmin.register Expositor, as: 'expositores' do
-  menu priority: 4
+  menu priority: 3
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
 #
@@ -22,9 +22,14 @@ ActiveAdmin.register Expositor, as: 'expositores' do
 # filter :nombre_expositor, :label => "Nombre"
 #filter :estado, :label => "estado"
 
-  permit_params :nombre_expositor, :rut, :telefono, :carrera, :anio_ingreso, :correo, :estado,
-                expositor_horarios_attributes: [:horario_id],
-                fallo_expositor_attribute: [:expositor_id, :nombre_expositor]
+  permit_params :nombre_expositor, :rut, :telefono, :carrera, :anio_ingreso, :correo, :estado,:_destroy,
+               expositor_horarios_attributes: [:horario_id, :dia, :horario,:_destroy,:update],
+                fallo_expositor_attribute: [:expositor_id, :nombre_expositor,:_destroy]
+
+  after_create do |expositor|
+    AdminUser.create(email: expositor.correo, password: expositor.rut, password_confirmation: expositor.rut,  rol_id: (Rol.find_by_nombre('Expositor')).id)
+  end
+
 
 
   index :download_links => false do
@@ -34,6 +39,9 @@ ActiveAdmin.register Expositor, as: 'expositores' do
     column :estado
     column "Fallos" do |expositor|
       expositor.asistencias.where(asistencia: false).where(justifica: false).size
+    end
+    column "Asistencias" do |expositor|
+      expositor.asistencias.where(asistencia: true).size
     end
     actions
   end
@@ -61,8 +69,20 @@ ActiveAdmin.register Expositor, as: 'expositores' do
         row "Total turnos Asignados" do
           expositor.asistencias.size
         end
+
+
       end
     end
+
+
+    panel "Disponibilidad" do
+      table_for expositor.horarios do
+        column :dia
+        column :horario
+      end
+
+    end
+
   end
 
 
@@ -85,11 +105,30 @@ ActiveAdmin.register Expositor, as: 'expositores' do
       f.input :estado, collection: {'activo': 'activo', 'inactivo': 'inactivo'}
 
 
-      f.has_many :expositor_horarios, heading: 'Dias', heading: false,
-                 allow_destroy: true,
-                 new_record: true do |a|
 
-        a.input :horario_id, collection: Horario.all.collect {|c| ["#{ c.dia + "," + c.horario.to_s }", c.id]}, as: :select
+
+
+
+
+      f.has_many :expositor_horarios, allow_destroy: true, new_record: false ,heading: 'Horarioss', new_record: true do |a|
+        a.input :horario_id, collection: Horario.all.collect {|c| ["#{ c.dia + "," + c.horario.to_s}", c.id]}, as: :select
+
+
+
+
+
+
+
+
+
+
+
+
+     # f.has_many :expositor_horarios, heading: 'Dias', heading: false,
+             #    allow_destroy: true,
+               #  new_record: true do |a|
+
+      #  a.input :horario_id, collection: Horario.all.collect {|c| ["#{ c.dia + "," + c.horario.to_s }", c.id]}, as: :select
 
         #f.has_many :fallo_expositor_actividads_attribute do |expositor_form|
         # expositor_form.input :expositor_id, collection: Expositor.all.collect {|c| ["#{ c.nombre_expositor}", c.id]}, as: :select

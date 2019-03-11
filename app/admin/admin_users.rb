@@ -1,6 +1,6 @@
 ActiveAdmin.register AdminUser do
-  menu priority: 2
-  permit_params :email, :password, :password_confirmation
+  menu priority: 1
+  permit_params :email, :password, :password_confirmation, :rol_id
 
   index do
     selectable_column
@@ -22,6 +22,8 @@ ActiveAdmin.register AdminUser do
       f.input :email
       f.input :password
       f.input :password_confirmation
+      f.input :rol, collection: Rol.all.collect {|c| ["#{c.nombre}", c.id]}, as: :select
+
     end
     f.actions
   end

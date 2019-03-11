@@ -17,13 +17,15 @@ ActiveAdmin.register Actividad, as: 'actividades' do
 
   filter :nombre_feria, :label => "Nombre Feria"
   filter :nombre_colegio, :label => "Nombre Colegio"
+  filter :fecha, :label => "Fecha"
+  filter :cancelar, :label => "Actividad realizada con normalidad"
+  permit_params :nombre_feria, :nombre_colegio, :_destroy, :update, :direccion, :comuna, :contacto_colegio, :numero_expositores, :hora_inicio, :hora_termino, :fecha, :transporte, :jornada, :cancelar,
+                activdad_expositors_attributes: [:expositor_id, :nombre_expositor, :carrera, :_destroy, :update],
+                expositors_attributes: [:_destroy],
+                actividad_materials_attributes: [:material_id, :nombre_material, :cantidad, :_destroy, :update]
 
-  permit_params :nombre_feria, :nombre_colegio, :direccion, :comuna, :contacto_colegio, :numero_expositores, :hora_inicio, :hora_termino, :fecha, :transporte, :jornada,
-                activdad_expositors_attributes: [:expositor_id, :nombre_expositor],
-                actividad_materials_attributes: [:material_id, :nombre_material, :cantidad, :_destroy]
 #fallo_expositor_actividads: [:expositor_id, :nombre_expositor]
 #  fallo_expositor_actividads: [:actividad_id, :nombre_colegio]
-
 
   after_create do |actividad|
     actividad.actividad_materials.each do |material|
@@ -40,27 +42,33 @@ ActiveAdmin.register Actividad, as: 'actividades' do
     elsif actividad.jornada == "Tarde"
       horarios = Horario.where("horario = 'Completo' or horario = 'Tarde'").where(dia: semana[actividad.fecha.wday])
     end
+
+
     expositor_horarios = ExpositorHorario.where(horario_id: horarios)
     id_expositor = []
     expositor_horarios.each do |actual|
       if !id_expositor.include?(actual.expositor_id)
-        id_expositor <<  actual.expositor_id
+        id_expositor << actual.expositor_id
       end
     end
-    expositores = Expositor.where(id: id_expositor).shuffle[0..actividad.numero_expositores]
-    expositores.each do |expositor|
-      ActivdadExpositor.create(actividad_id: actividad.id, expositor_id: expositor.id)
+    if actividad.numero_expositores != nil
+      if actividad.numero_expositores > 0
+        expositores = Expositor.where(id: id_expositor).where(estado: "activo").shuffle[0..actividad.numero_expositores]
+#    expositores = Expositor.where(id: id_expositor,estado: "activo").shuffle[0..actividad.numero_expositores]
+        expositores.each do |expositor|
+          ActivdadExpositor.create(actividad_id: actividad.id, expositor_id: expositor.id)
+        end
+      end
     end
   end
 
+
   before_update do |actividad|
     actividad.actividad_materials.each do |material|
-      xyz = material.material.cantidad + material.cantidad
-      if xyz == material.material.cantidad - material.cantidad
+      material.material.cantidad -= material.cantidad
+      material.material.save
 
-      end
     end
-
   end
 
 
@@ -76,6 +84,7 @@ ActiveAdmin.register Actividad, as: 'actividades' do
     column :fecha
     column :transporte
     column :jornada
+    column :cancelar
     actions
   end
 
@@ -94,9 +103,22 @@ ActiveAdmin.register Actividad, as: 'actividades' do
         row :fecha
         row :transporte
         row :jornada
+        row :cancelar
         panel "expositor" do
           table_for actividad.expositors do
             column :nombre_expositor
+            column :carrera
+
+          end
+
+        end
+        panel "material" do
+          table_for actividad.actividad_materials do
+            column "material" do |actividad_material|
+              actividad_material.material.nombre_material
+
+            end
+            column :cantidad
           end
 
         end
@@ -119,25 +141,31 @@ ActiveAdmin.register Actividad, as: 'actividades' do
       f.input :numero_expositores
       f.input :hora_inicio
       f.input :hora_termino
-      f.input :fecha
+      f.input :fecha, :as => :datepicker, :html_option => { value: Time.now }
+
+      #f.input :fecha , :as => :date_picker
       f.input :jornada, collection: {'Mañana': 'Mañana', 'Tarde': 'Tarde', 'Completo': 'Completo'}
       f.input :transporte, collection: {'Micro': 'micro', 'Vehiculo institucional': 'institucional', 'Taxi': 'taxi'}
-      f.has_many :activdad_expositors, heading: 'Expositores', new_record: true do |a|
-        a.input :expositor_id, collection: Expositor.all.collect {|c| ["#{ c.nombre_expositor}", c.id]}, as: :select
 
+      if !f.object.new_record?
+        f.has_many :activdad_expositors, allow_destroy: true, new_record: true, heading: 'Expositores', new_record: true do |a|
+          a.input :expositor_id, collection: Expositor.all.collect {|c| ["#{ c.nombre_expositor}", c.id]}, as: :select
+
+        end
       end
-
-      f.has_many :actividad_materials do |material_form|
+      f.has_many :actividad_materials, allow_destroy: true, new_record: true do |material_form|
         material_form.input :material_id, collection: Material.all.collect {|c| ["#{ c.nombre_material}", c.id]}, as: :select
         material_form.input :cantidad
-        #material_form.input :_destroy, :as => :boolean, :required => false, :label => 'Remove'
-        material_form.input :_destroy, :as => :boolean, :label => "Destroy?"
-
-
       end
+      f.input :cancelar
 
+
+      f.semantic_errors *f.object.errors.keys
 
     end
+
     f.actions
+
+
   end
 end

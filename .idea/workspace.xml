@@ -8,20 +8,32 @@
       <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/admin/actividads.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/admin/actividads.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/admin/admin_users.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/admin/admin_users.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/admin/asistencia.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/admin/asistencia.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/admin/dashboard.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/admin/dashboard.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/admin/expositor_detalles.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/admin/expositor_detalles.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/admin/expositors.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/admin/expositors.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/admin/horarios.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/admin/horarios.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/admin/interesados.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/admin/interesados.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/admin/materials.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/admin/materials.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/activdad_expositor.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/activdad_expositor.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/actividad.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/actividad.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/admin_user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/admin_user.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/asistencia.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/asistencia.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/expositor.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/expositor.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/expositor_detalle.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/expositor_detalle.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/expositor_horario.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/expositor_horario.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/fallo_expositor.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/fallo_expositor.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/fallo_expositor_actividad.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/fallo_expositor_actividad.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/horario.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/horario.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/interesado.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/interesado.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/material.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/material.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/mailer.html.erb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/mailer.text.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/application.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/application.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/initializers/active_admin.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/active_admin.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/locales/devise.en.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/locales/devise.en.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/locales/en.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/locales/en.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/migrate/20181128231815_add_foreign_key_to_actividad_expositor.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20181128231815_add_foreign_key_to_actividad_expositor.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/seeds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -75,50 +87,51 @@
     <session id="1983775532">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="14" />
+          <entry key="project.closed" value="16" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.10" value="2" />
+          <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="2" />
-          <entry key="project.open.time.7" value="4" />
+          <entry key="project.open.time.7" value="5" />
           <entry key="project.open.time.8" value="4" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="17" />
+          <entry key="project.opened" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="Gemfile" value="1" />
-          <entry key="rb" value="8885" />
-          <entry key="yml" value="49" />
+          <entry key="Gemfile" value="4" />
+          <entry key="rb" value="13799" />
+          <entry key="yml" value="67" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Ruby" value="8886" />
-          <entry key="YAML" value="49" />
+          <entry key="Ruby" value="13803" />
+          <entry key="YAML" value="67" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="CNAME" value="1" />
-          <entry key="Gemfile" value="1" />
+          <entry key="Gemfile" value="3" />
           <entry key="arb" value="6" />
           <entry key="bundle" value="1" />
           <entry key="coffee" value="1" />
           <entry key="erb" value="4" />
           <entry key="html" value="1" />
           <entry key="js" value="1" />
-          <entry key="key" value="1" />
+          <entry key="key" value="2" />
           <entry key="md" value="2" />
           <entry key="rails" value="1" />
           <entry key="rake" value="1" />
-          <entry key="rb" value="435" />
+          <entry key="rb" value="702" />
           <entry key="setup" value="1" />
           <entry key="update" value="1" />
           <entry key="yarn" value="1" />
-          <entry key="yml" value="10" />
+          <entry key="yml" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -127,10 +140,10 @@
           <entry key="HTML" value="1" />
           <entry key="JavaScript" value="1" />
           <entry key="Markdown" value="2" />
-          <entry key="PLAIN_TEXT" value="8" />
+          <entry key="PLAIN_TEXT" value="9" />
           <entry key="RHTML" value="4" />
-          <entry key="Ruby" value="442" />
-          <entry key="YAML" value="10" />
+          <entry key="Ruby" value="711" />
+          <entry key="YAML" value="16" />
         </counts>
       </usages-collector>
     </session>
@@ -140,83 +153,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/admin/dashboard.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/admin/actividads.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="30" column="28" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/admin/expositor_detalles.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="587">
-              <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/admin/horarios.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
-              <caret line="41" column="96" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="96" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20190306212707_add_column_jornada_to_actividads.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20181218034403_add_column_to_actividads.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="49" selection-start-line="2" selection-start-column="49" selection-end-line="2" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20190306192244_add_column_to_asistencias.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="47" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/actividad.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/activdad_expositor.rb">
+        <entry file="file://$PROJECT_DIR$/app/admin/expositors.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="23" selection-start-column="6" selection-end-column="23" />
+              <caret column="49" lean-forward="true" selection-start-column="30" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20181130030529_create_horarios.rb">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/devolver_material.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="42" selection-start-column="42" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/admin/devolver_materials.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="63" selection-start-column="63" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -227,6 +191,7 @@
     <findStrings>
       <find>you</find>
       <find>dow</find>
+      <find>action</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -235,44 +200,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/config/database.yml" />
-        <option value="$PROJECT_DIR$/db/migrate/20181128231815_add_foreign_key_to_actividad_expositor.rb" />
-        <option value="$PROJECT_DIR$/app/models/actividad_material.rb" />
-        <option value="$PROJECT_DIR$/app/models/activdad_expositor.rb" />
-        <option value="$PROJECT_DIR$/app/models/material.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20181129014624_add_foreign_key_to_actividad_material.rb" />
-        <option value="$PROJECT_DIR$/app/models/expositor_horario.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20181130030908_add_foreign_key_to_expositor_horario.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20181130183907_chg_table_horararios.rb" />
-        <option value="$PROJECT_DIR$/app/models/horario.rb" />
-        <option value="$PROJECT_DIR$/app/admin/horarios.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20181218033446_add_column_to_expositors.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20181218034403_add_column_to_actividads.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20181218140159_add_foreign_key_to_expositor_detalle.rb" />
-        <option value="$PROJECT_DIR$/app/models/expositor_detalle.rb" />
-        <option value="$PROJECT_DIR$/app/admin/expositor_detalles.rb" />
-        <option value="$PROJECT_DIR$/app/models/fallo_expositor_actividad.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20190101124941_add_foreign_key_to_fallo_expositor_actividad.rb" />
-        <option value="$PROJECT_DIR$/app/admin/dashboard.rb" />
-        <option value="$PROJECT_DIR$/app/admin/admin_users.rb" />
-        <option value="$PROJECT_DIR$/app/admin/interesados.rb" />
-        <option value="$PROJECT_DIR$/app/admin/materials.rb" />
         <option value="$PROJECT_DIR$/config/locales/devise.en.yml" />
-        <option value="$PROJECT_DIR$/config/locales/en.yml" />
-        <option value="$PROJECT_DIR$/app/models/fallo_expositor.rb" />
         <option value="$PROJECT_DIR$/app/admin/fallo_expositors.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20190306184652_create_asistencia.rb" />
-        <option value="$PROJECT_DIR$/app/models/asistencia.rb" />
-        <option value="$PROJECT_DIR$/app/models/expositor.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20190306192244_add_column_to_asistencias.rb" />
-        <option value="$PROJECT_DIR$/app/admin/asistencia.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20190306192719_chg_name_column_justica_to_asistencias.rb" />
-        <option value="$PROJECT_DIR$/app/admin/expositors.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20190306212707_add_column_jornada_to_actividads.rb" />
+        <option value="$PROJECT_DIR$/app/admin/expositor_detalles.rb" />
+        <option value="$PROJECT_DIR$/app/models/activdad_expositor.rb" />
+        <option value="$PROJECT_DIR$/app/models/fallo_expositor_actividad.rb" />
+        <option value="$PROJECT_DIR$/app/models/expositor_horario.rb" />
+        <option value="$PROJECT_DIR$/app/models/expositor_detalle.rb" />
+        <option value="$PROJECT_DIR$/app/models/horario.rb" />
+        <option value="$PROJECT_DIR$/app/admin/materials.rb" />
+        <option value="$PROJECT_DIR$/app/admin/interesados.rb" />
+        <option value="$PROJECT_DIR$/app/models/material.rb" />
+        <option value="$PROJECT_DIR$/app/models/interesado.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20190308151126_add_foreign_key_to_asistencias_expositor_actividad.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20190308151334_add_foreign_key_to_actividad_materials.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20181128231815_add_foreign_key_to_actividad_expositor.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20190308152144_add_foreign_key_to_actividad_materials2.rb" />
+        <option value="$PROJECT_DIR$/db/schema.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20190308150355_add_foreign_key_to_comentario_actividad_expositor_sala.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20190308175054_chg_remove_fk.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20190308180235_chg_remove_fk2.rb" />
+        <option value="$PROJECT_DIR$/app/models/asistencia.rb" />
+        <option value="$PROJECT_DIR$/app/admin/dashboard.rb" />
+        <option value="$PROJECT_DIR$/app/admin/comentarios.rb" />
+        <option value="$PROJECT_DIR$/app/admin/horarios.rb" />
+        <option value="$PROJECT_DIR$/config/locales/en.yml" />
+        <option value="$PROJECT_DIR$/config/application.rb" />
+        <option value="$PROJECT_DIR$/app/models/expositor.rb" />
+        <option value="$PROJECT_DIR$/app/models/fallo_expositor.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20190311135424_chg_fecha_in_to_asistencia.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20190311153415_add_column_cancelar_in_to_actividad.rb" />
+        <option value="$PROJECT_DIR$/app/models/actividad.rb" />
+        <option value="$PROJECT_DIR$/app/admin/actividads.rb" />
+        <option value="$PROJECT_DIR$/app/admin/asistencia.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/config/initializers/active_admin.rb" />
-        <option value="$PROJECT_DIR$/app/models/actividad.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20190306212707_add_column_jornada_to_actividads.rb" />
-        <option value="$PROJECT_DIR$/app/admin/actividads.rb" />
+        <option value="$PROJECT_DIR$/app/models/rol.rb" />
+        <option value="$PROJECT_DIR$/app/models/admin_user.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20190311175405_chg_rol_table.rb" />
+        <option value="$PROJECT_DIR$/db/seeds.rb" />
+        <option value="$PROJECT_DIR$/app/admin/admin_users.rb" />
+        <option value="$PROJECT_DIR$/app/models/comentario.rb" />
+        <option value="$PROJECT_DIR$/app/models/ability.rb" />
+        <option value="$PROJECT_DIR$/app/admin/expositors.rb" />
+        <option value="$PROJECT_DIR$/app/models/devolver_material.rb" />
+        <option value="$PROJECT_DIR$/app/admin/devolver_materials.rb" />
       </list>
     </option>
   </component>
@@ -288,17 +266,16 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="993" />
+    <option name="x" value="67" />
     <option name="y" value="25" />
     <option name="width" value="927" />
-    <option name="height" value="1053" />
+    <option name="height" value="1055" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -316,12 +293,6 @@
               <item name="difusion" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="difusion" type="b2602c69:ProjectViewProjectNode" />
-              <item name="difusion" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="mailers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="difusion" type="b2602c69:ProjectViewProjectNode" />
@@ -345,6 +316,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -498,12 +470,14 @@
       <workItem from="1546444512816" duration="1731000" />
       <workItem from="1551793992206" duration="389000" />
       <workItem from="1551800128227" duration="3257000" />
-      <workItem from="1551895841756" duration="11850000" />
+      <workItem from="1551895841756" duration="12081000" />
+      <workItem from="1551968840110" duration="22188000" />
+      <workItem from="1551995897757" duration="53679000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106951000" />
+    <option name="totallyTimeSpent" value="183049000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -518,7 +492,7 @@
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49675325" visible="true" weight="0.1438849" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49675325" visible="true" weight="0.2888766" />
       <window_info id="Structure" order="1" sideWeight="0.5032467" side_tool="true" weight="0.3392363" />
       <window_info id="Favorites" order="2" side_tool="true" weight="0.32982844" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -539,28 +513,6 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
     </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49675325" visible="true" weight="0.1438849" />
-      <window_info id="Structure" order="1" sideWeight="0.5032467" side_tool="true" weight="0.3392363" />
-      <window_info id="Favorites" order="2" side_tool="true" weight="0.32982844" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32900432" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" visible="true" weight="0.32978722" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -569,320 +521,300 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/db/migrate/20181218140159_add_foreign_key_to_expositor_detalle.rb">
+    <entry file="file://$PROJECT_DIR$/config/locales/en.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20190308150355_add_foreign_key_to_comentario_actividad_expositor_sala.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20190308180235_chg_remove_fk2.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="2" column="94" lean-forward="true" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="94" />
+          <caret line="2" column="42" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20181128231948_create_activdad_expositors.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/expositor_detalle.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/database.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="39" column="46" lean-forward="true" selection-start-line="39" selection-start-column="46" selection-end-line="39" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20181128231815_add_foreign_key_to_actividad_expositor.rb">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20190308175054_chg_remove_fk.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
-          <caret line="3" column="95" lean-forward="true" selection-start-line="3" selection-start-column="95" selection-end-line="3" selection-end-column="95" />
+          <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20181122204052_create_expositors.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/schema.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20181218131545_create_expositor_detalles.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20181122215948_create_actividads.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20181129014741_create_actividad_materials.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/material.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/interesado.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/horario.rb">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20190311135424_chg_fecha_in_to_asistencia.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <caret line="2" column="42" selection-start-line="2" selection-start-column="42" selection-end-line="3" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20181129014624_add_foreign_key_to_actividad_material.rb">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20190306192244_add_column_to_asistencias.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="2" column="37" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="37" />
+          <caret line="2" column="63" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="63" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20181130030809_create_expositor_horarios.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20190101124928_create_fallo_expositor_actividads.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20181218033446_add_column_to_expositors.rb">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20190311153415_add_column_cancelar_in_to_actividad.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <caret line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/initializers/active_admin.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="72" column="2" selection-start-line="72" selection-start-column="2" selection-end-line="72" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20190311175405_chg_rol_table.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20190101123940_create_fallo_expositors.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20190101124941_add_foreign_key_to_fallo_expositor_actividad.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20181130030908_add_foreign_key_to_expositor_horario.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="90" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20181130030529_create_horarios.rb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20181129165125_add_column_to_actividad_materials.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/rol.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="15">
+          <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/admin_user.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20190102135521_create_interesados.rb">
+    <entry file="file://$PROJECT_DIR$/app/admin/asistencia.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="6" lean-forward="true" selection-start-line="3" selection-start-column="6" selection-end-line="14" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/actividad_material.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="525">
+          <caret line="41" selection-start-line="41" selection-end-line="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/admin/admin_users.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="1" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="18" />
+        <state relative-caret-position="465">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/interesado.rb">
+    <entry file="file://$PROJECT_DIR$/db/schema.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="11" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/ability.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="29" column="56" selection-start-line="29" selection-start-column="56" selection-end-line="29" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/admin/actividads.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-330">
+          <caret line="80" column="30" lean-forward="true" selection-start-line="80" selection-start-column="30" selection-end-line="80" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/admin/horarios.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/admin/interesados.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" column="21" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/admin/materials.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/admin/dashboard.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="47" column="7" selection-start-line="47" selection-start-column="7" selection-end-line="47" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/admin/comentarios.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/actividad.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/actividad_material.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="12" selection-start-column="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/admin_user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/application_record.rb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/locales/devise.en.yml">
+    <entry file="file://$PROJECT_DIR$/app/models/asistencia.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="58" column="81" selection-start-line="58" selection-start-column="81" selection-end-line="58" selection-end-column="81" />
+        <state relative-caret-position="15">
+          <caret line="1" column="28" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/admin/expositor_detalles.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/comentario.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/expositor_horario.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/fallo_expositor.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="1" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/fallo_expositor_actividad.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/fallo_expositor.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/locales/en.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1020">
-          <caret line="28" column="23" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/storage.yml">
+    <entry file="file://$PROJECT_DIR$/app/models/horario.rb">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/admin/materials.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/admin/interesados.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="78" column="21" selection-start-line="78" selection-start-column="21" selection-end-line="78" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/asistencia.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="25" selection-start-column="25" selection-end-column="25" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/expositor.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="28" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="28" />
+        <state relative-caret-position="210">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/admin/fallo_expositors.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="33" column="30" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20190306184652_create_asistencia.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="42" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="42" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/app/models/expositor_detalle.rb">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20190306192719_chg_name_column_justica_to_asistencias.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20181130183907_chg_table_horararios.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20181130030908_add_foreign_key_to_expositor_horario.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20181130030809_create_expositor_horarios.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20181128231948_create_activdad_expositors.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20181122215948_create_actividads.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20181122213348_add_correo_to_expositor.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20181123001321_create_materials.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20181129014741_create_actividad_materials.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20190306212707_add_column_jornada_to_actividads.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="27" lean-forward="true" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/initializers/active_admin.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="239" column="3" selection-start-line="239" selection-start-column="3" selection-end-line="239" selection-end-column="3" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20181130030529_create_horarios.rb">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/admin/asistencia.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/devolver_material.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        <state>
+          <caret column="42" selection-start-column="42" selection-end-column="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/admin/expositors.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
-          <caret line="84" column="60" selection-start-line="84" selection-start-column="60" selection-end-line="84" selection-end-column="60" />
+        <state>
+          <caret column="49" lean-forward="true" selection-start-column="30" selection-end-column="49" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/actividad.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/activdad_expositor.rb">
+    <entry file="file://$PROJECT_DIR$/app/admin/devolver_materials.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="23" selection-start-column="6" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20190306192244_add_column_to_asistencias.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="47" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20181218034403_add_column_to_actividads.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="49" selection-start-line="2" selection-start-column="49" selection-end-line="2" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20190306212707_add_column_jornada_to_actividads.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/admin/horarios.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="41" column="96" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="96" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/admin/actividads.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="30" column="28" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/admin/expositor_detalles.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="587">
-          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/admin/dashboard.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+          <caret column="63" selection-start-column="63" selection-end-column="63" />
         </state>
       </provider>
     </entry>
